@@ -2,21 +2,21 @@
         <h1 class="mat-display-1">New Room</h1>
         <mat-form-field appearance="outline">
           <mat-label>Room name</mat-label>
-          <input matInput [ngModel] = "roomname" (keyup) = "checkForm()" placeholder="Please enter the name of your room">
+          <input matInput [(ngModel)] = "roomname" (keyup) = "checkForm()" placeholder="Please enter the name of your room">
         </mat-form-field>
       
         <mat-form-field appearance="outline">
                 <mat-label>Idea Deadline</mat-label>
-                <input matInput [ngModel] = "idea_deadline" (keyup) = "checkForm()" type="date" placeholder="Deadline of the idea collection phase">
+                <input matInput [(ngModel)] = "idea_deadline" (keyup) = "checkForm()" type="date" placeholder="Deadline of the idea collection phase">
         </mat-form-field>
 
         <mat-form-field appearance="outline">
                 <mat-label>Final Deadline</mat-label>
-                <input matInput [ngModel] = "final_deadline" (keyup) = "checkForm()" type="date" placeholder="Deadline for choosing an idea">
+                <input matInput [(ngModel)] = "final_deadline" (keyup) = "checkForm()" type="date" placeholder="Deadline for choosing an idea">
         </mat-form-field>
 
         <mat-form-field>
-          <textarea matInput [ngModel] = "description" (keyup) = "checkForm()" placeholder="Description"></textarea>
+          <textarea matInput [(ngModel)] = "description" (keyup) = "checkForm()" placeholder="Description"></textarea>
         </mat-form-field>
         
         <button mat-raised-button color="primary" [disabled]="submit_disabled" (click)="onCreateRoom()">Create Room</button>
