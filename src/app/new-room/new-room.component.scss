@@ -4,9 +4,35 @@
     align-items: center;
     justify-content: center;
 }
-mat-form-field{
+.frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 60%;
+    background-color: rgba(257,257,257,0.8);
+    border-radius: 10%;
+    padding: 2%;
 }
-.mat-display-1{
-    margin: 3%;
+mat-form-field{
+    width: 100%;
 }
+.hero-bkg-animated {
+    background: gray url(https://cdn1.vectorstock.com/i/1000x1000/13/10/present-gift-signs-seamless-pattern-background-vector-21391310.jpg) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 100%;
+    
+    box-sizing: border-box;
+    animation: slide 20s linear infinite;
+  }
+  
+  .hero-bkg-animated h1 {
+    font-family: sans-serif;
+  }
+  
+  @keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: -400px 0; }
+  }
