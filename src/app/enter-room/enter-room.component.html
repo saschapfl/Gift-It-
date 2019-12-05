@@ -1,1 +1,10 @@
-<p>enter-room works!</p>
+<div class="example-container">
+    <h1 class="mat-display-1">Enter Room</h1>
+    <mat-form-field appearance="outline">
+        <mat-label>Roomkey</mat-label>
+        <input matInput [(ngModel)] = "key" (keyup) = "checkForm()" placeholder="Please enter the key of the desired room">
+        <mat-icon matSuffix *ngIf ="!key_valid">lock</mat-icon>
+        <mat-icon matSuffix *ngIf ="key_valid">lock_open</mat-icon>
+    </mat-form-field>
+    <button mat-raised-button color="primary" [disabled]="!key_valid" (click)="onEnterRoom()">Enter Room</button>
+</div>
