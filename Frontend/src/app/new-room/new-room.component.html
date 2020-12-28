@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<div class="example-container hero-bkg-animated">
+        <div class ="frame">
+                <h1 class="mat-display-1">New Room</h1>
+                <mat-form-field appearance="outline">
+                <mat-label>Room Name</mat-label>
+                <input matInput required [(ngModel)] = "room.name" (keyup) = "checkForm()" placeholder="Please enter the name of your room">
+                </mat-form-field>
+        
+                <mat-form-field appearance="outline">
+                        <mat-label>Planning Deadline</mat-label>
+                        <input matInput required [matDatepicker]="picker" [(ngModel)] = "room.planning_date" (ngModelChange) = "checkForm()" placeholder="Deadline for planning your party">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker touchUi #picker></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                        <mat-label>Party Date</mat-label>
+                        <input matInput required [matDatepicker]="picker2" [(ngModel)] = "room.party_date" (ngModelChange) = "checkForm()" placeholder="Actual date of the party">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker touchUi #picker2></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                        <mat-label>Owner username</mat-label>
+                        <input matInput required [(ngModel)] = "room.owner.username" (keyup) = "checkForm()" placeholder="Please enter the name of your room">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                        <mat-label>Owner password</mat-label>
+                        <input matInput type="password" required [(ngModel)] = "room.owner.password" (keyup) = "checkForm()" placeholder="Please enter the name of your room">
+                </mat-form-field>
+                
+
+                <mat-form-field appearance="outline">
+                <textarea matInput [(ngModel)] = "room.description" (keyup) = "checkForm()" placeholder="Description"></textarea>
+                </mat-form-field>
+                <div class = "create_button">
+                        <button mat-raised-button color="primary" [disabled]="submit_disabled" (click)="onCreateRoom()">Create Room</button>
+                </div>
+        </div>
+</div>
+      

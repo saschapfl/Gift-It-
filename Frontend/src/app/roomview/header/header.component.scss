@@ -1,0 +1,44 @@
+html, body {
+    height:100%;
+    width: 100%;
+} 
+
+.mat-display-1{
+    width: 25%;
+    margin: 0;
+    font-size: 20pt;
+}
+::ng-deep .mat-horizontal-stepper-header{
+    pointer-events: none !important;
+}
+
+.button-area{
+    width: 25%;
+    margin: 0;
+    font-size: 20pt;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.stepper{
+    padding-left: 1%;
+    padding-right: 3%;
+    padding-top: 1.5%;
+    width: 50%;
+}
+.header{
+    padding: 2%;
+    margin-bottom: 0.5%;
+    width: 100%;
+    display: flex;
+}
+.btn_add{
+    position: absolute;
+    right: 6%;
+    width: 10%;
+    margin-top: 0.2%;
+}
+
+.header-component{
+   
+}

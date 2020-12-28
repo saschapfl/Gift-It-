@@ -1,0 +1,27 @@
+.example-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    background-color: rgba(257,257,257,0.8);
+   height: 100%;
+    padding: 2%;
+}
+mat-form-field{
+    width: 100%;
+}
+.hero-bkg-animated {
+    background: gray url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/1ff51bda-df0c-476a-9280-6fab0f356d5d/d31nwkl-22c3d356-f774-40a0-8289-c326e47db8e8.png) repeat 0 0;
+}
+.create_button{
+    align-items: left;
+    justify-content: left;
+}
