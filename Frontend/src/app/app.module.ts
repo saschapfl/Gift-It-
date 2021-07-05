@@ -20,7 +20,7 @@ import { RoomComponent } from './roomview/room/room.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule} from '@angular/common/http';
-import { RoomService } from './services/room.service';
+import { RoomService } from './services/room/room.service';
 import {MatDatepickerModule} from '@angular/material/datepicker'; 
 import { MatNativeDateModule } from '@angular/material/core';
 import { HeaderComponent } from './roomview/header/header.component';
@@ -31,7 +31,8 @@ import { EntertainmentComponent } from './roomview/entertainment/entertainment.c
 import { FoodComponent } from './roomview/food/food.component';
 import { LocationComponent } from './roomview/location/location.component';
 import { GiftComponent } from './roomview/gift/gift.component';
-import { MatTooltipModule } from '@angular/material';
+import { MatCardModule, MatDialogModule, MatTooltipModule } from '@angular/material';
+import { AddUserDialogComponent } from './roomview/user-management/add-user-dialog/add-user-dialog/add-user-dialog.component';
 
 @NgModule({
   declarations: [
@@ -48,8 +49,10 @@ import { MatTooltipModule } from '@angular/material';
     EntertainmentComponent,
     FoodComponent,
     LocationComponent,
-    GiftComponent
+    GiftComponent,
+    AddUserDialogComponent
   ],
+  entryComponents: [AddUserDialogComponent],
   imports: [
     FormsModule,
     MatFormFieldModule,
@@ -68,7 +71,9 @@ import { MatTooltipModule } from '@angular/material';
     MatNativeDateModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatCardModule,
+    MatDialogModule
   ],
   providers: [
     RoomService

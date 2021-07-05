@@ -1,7 +1,7 @@
 import { Component, OnInit, OnChanges } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Room } from 'src/app/contracts/room';
-import { RoomService } from 'src/app/services/room.service';
+import { RoomService } from 'src/app/services/room/room.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

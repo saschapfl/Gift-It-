@@ -1,3 +1,25 @@
-<div *ngIf="owner">
-<p>{{owner.username}}</p>
+<div class="user-management-container">
+    <h1>User-Mangement</h1>
+    <div *ngIf="room" class="owner">
+        <p>{{room.owner.username}}</p>
+    </div>
+    <div *ngIf="room" class="users">
+        <mat-card *ngFor="let user of users" class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>{{user.username}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-actions>
+                <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+                    <mat-icon>delete</mat-icon>
+                </button>
+                <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+                    <mat-icon>edit</mat-icon>
+                </button>
+            </mat-card-actions>
+          </mat-card>
+    </div>
+    <button (click)="openDialog()" mat-fab color="warn" aria-label="Example icon button with a home icon">
+        <mat-icon>add</mat-icon>
+    </button>
 </div>
