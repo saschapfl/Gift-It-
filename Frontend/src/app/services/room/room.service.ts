@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Room } from '../contracts/room';
+import { Room } from '../../contracts/room';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -30,5 +30,9 @@ export class RoomService {
 
   public addRoom(room: Room):Observable<Room>{
     return this.httpClient.post<Room>(this.roomsURL, room);
+  }
+
+  public updateRoom(room: Room): Observable<Room>{
+    return this.httpClient.put<Room>(this.roomsURL, room)
   }
 }

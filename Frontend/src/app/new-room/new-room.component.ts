@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { RoomService } from '../services/room.service';
+import { RoomService } from '../services/room/room.service';
 import { HttpHeaders } from '@angular/common/http';
 import { Room } from '../contracts/room';
 import {Router} from '@angular/router';

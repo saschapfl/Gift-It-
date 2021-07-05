@@ -9,10 +9,15 @@ import java.util.List;
 @Entity
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.TABLE)
+    @Column(name="iduser")
+    private int iduser;
+
     @Column(name="username")
-    private String username;
+    public String username;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private Room room;
+    @JoinColumn(name = "room_id")
+    public Room room;
 
 }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Room } from 'src/app/contracts/room';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { RoomService } from 'src/app/services/room.service';
+import { RoomService } from 'src/app/services/room/room.service';
 import { RoomComponent } from '../room/room.component';
 
 @Component({
