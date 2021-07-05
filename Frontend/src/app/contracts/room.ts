@@ -5,8 +5,7 @@ import { User } from './user';
 export class Room {
     id: number;
     name: string;
-    planning_date: Date;
-    party_date: Date;
+    timemarks: Date[];
     description: string;
     owner: Owner;
     ideas: Idea[];

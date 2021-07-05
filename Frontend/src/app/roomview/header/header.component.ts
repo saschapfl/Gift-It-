@@ -35,8 +35,8 @@ export class HeaderComponent implements OnInit {
 
   private setStepper(){
     let now = Date.now();
-    let l_planning_date = new Date(this.room.planning_date);
-    let l_party_date = new Date(this.room.party_date);
+    let l_planning_date = new Date();
+    let l_party_date = new Date();
     if(l_party_date.getTime() < now){
       this.stepper_index = 2;
     }

@@ -1,0 +1,9 @@
+C:\src\PlanYourParty\Gift-It-\Backend\PlanYourParty.WebApi.Contracts\PlanYourParty.WebApi.Contracts\bin\Debug\netcoreapp3.1\PlanYourParty.WebApi.Contracts.deps.json
+C:\src\PlanYourParty\Gift-It-\Backend\PlanYourParty.WebApi.Contracts\PlanYourParty.WebApi.Contracts\bin\Debug\netcoreapp3.1\PlanYourParty.WebApi.Contracts.dll
+C:\src\PlanYourParty\Gift-It-\Backend\PlanYourParty.WebApi.Contracts\PlanYourParty.WebApi.Contracts\bin\Debug\netcoreapp3.1\PlanYourParty.WebApi.Contracts.pdb
+C:\src\PlanYourParty\Gift-It-\Backend\PlanYourParty.WebApi.Contracts\PlanYourParty.WebApi.Contracts\obj\Debug\netcoreapp3.1\PlanYourParty.WebApi.Contracts.csproj.AssemblyReference.cache
+C:\src\PlanYourParty\Gift-It-\Backend\PlanYourParty.WebApi.Contracts\PlanYourParty.WebApi.Contracts\obj\Debug\netcoreapp3.1\PlanYourParty.WebApi.Contracts.AssemblyInfoInputs.cache
+C:\src\PlanYourParty\Gift-It-\Backend\PlanYourParty.WebApi.Contracts\PlanYourParty.WebApi.Contracts\obj\Debug\netcoreapp3.1\PlanYourParty.WebApi.Contracts.AssemblyInfo.cs
+C:\src\PlanYourParty\Gift-It-\Backend\PlanYourParty.WebApi.Contracts\PlanYourParty.WebApi.Contracts\obj\Debug\netcoreapp3.1\PlanYourParty.WebApi.Contracts.csproj.CoreCompileInputs.cache
+C:\src\PlanYourParty\Gift-It-\Backend\PlanYourParty.WebApi.Contracts\PlanYourParty.WebApi.Contracts\obj\Debug\netcoreapp3.1\PlanYourParty.WebApi.Contracts.dll
+C:\src\PlanYourParty\Gift-It-\Backend\PlanYourParty.WebApi.Contracts\PlanYourParty.WebApi.Contracts\obj\Debug\netcoreapp3.1\PlanYourParty.WebApi.Contracts.pdb

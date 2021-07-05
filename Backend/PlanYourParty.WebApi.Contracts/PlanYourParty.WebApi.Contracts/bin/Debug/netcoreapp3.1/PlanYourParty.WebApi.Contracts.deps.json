@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "PlanYourParty.WebApi.Contracts/1.0.0": {
+        "runtime": {
+          "PlanYourParty.WebApi.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PlanYourParty.WebApi.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

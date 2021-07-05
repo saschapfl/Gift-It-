@@ -17,7 +17,7 @@ const httpOptions = {
 
 export class RoomService {
 
-  public roomsURL = 'http://localhost:8080/rooms/';
+  public roomsURL = 'http://localhost:11995/rooms/';
   
   constructor(private httpClient : HttpClient) { }
 
@@ -25,7 +25,7 @@ export class RoomService {
   
   public getRoom(id: number) : Observable<Room>{
    
-    return this.httpClient.get<Room>(this.roomsURL + id);
+    return this.httpClient.get<Room>(this.roomsURL + "getRoomById/" + id);
   }
 
   public addRoom(room: Room):Observable<Room>{

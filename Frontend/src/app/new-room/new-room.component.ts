@@ -28,18 +28,7 @@ export class NewRoomComponent implements OnInit {
     if (this.room.name == ""){
       
     }
-    else if(this.room.planning_date == null){
-
-    }
-    else if(this.room.party_date == null){
-
-    }
-
-    else{
-      if(this.room.planning_date < this.room.party_date){
-        this.submit_disabled = false;
-      }
-    }
+  
   }
   onCreateRoom(){
     this.roomService.addRoom(this.room)
